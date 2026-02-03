@@ -1,6 +1,15 @@
 from django.urls import path
-from .views import register_page
+from .views import (
+    register_view,
+    # verify_otp_view,
+    # login_view,
+    # logout_view,
+)
 
 urlpatterns = [
-    path('register/', register_page, name='register'),
+    path('register/', register_view, name='register'),
+    # path('verify-otp/', verify_otp_view, name='verify-otp'),
+
+    # path('login/', login_view, name='login'),
+    # path('logout/', logout_view, name='logout'),
 ]
